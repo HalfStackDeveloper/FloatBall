@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FloatBall</string>
+    <string name="accessibility">开启悬浮球辅助功能</string>
+    <string name="tip">为保证悬浮球正常使用，请将其加入系统清理白名单</string>
+</resources>
