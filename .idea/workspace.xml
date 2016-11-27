@@ -11,11 +11,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/AccessibilityUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/AccessibilityUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatWindowManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatWindowManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/MainActivity.java" />
     </list>
     <ignored path="FloatBall.iws" />
@@ -62,8 +58,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="546">
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -72,13 +68,13 @@
       <file leaf-file-name="FloatBallView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="207">
+              <caret line="199" column="71" selection-start-line="199" selection-start-column="71" selection-end-line="199" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7233#7683#0" expanded="true" />
-                <element signature="e#7682#7683#0" expanded="true" />
-                <marker date="1480229392000" expanded="false" signature="2916:3031" ph="(v, event) → {" />
+                <element signature="e#7085#7403#0" expanded="true" />
+                <element signature="e#7402#7403#0" expanded="true" />
+                <marker date="1480230368000" expanded="false" signature="2884:2999" ph="(v, event) → {" />
               </folding>
             </state>
           </provider>
@@ -1791,11 +1787,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/AccessibilityUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatWindowManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2315,6 +2311,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatWindowManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2325,29 +2329,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatBallView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="207">
+          <caret line="199" column="71" selection-start-line="199" selection-start-column="71" selection-end-line="199" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7233#7683#0" expanded="true" />
-            <element signature="e#7682#7683#0" expanded="true" />
-            <marker date="1480229392000" expanded="false" signature="2916:3031" ph="(v, event) → {" />
+            <element signature="e#7085#7403#0" expanded="true" />
+            <element signature="e#7402#7403#0" expanded="true" />
+            <marker date="1480230368000" expanded="false" signature="2884:2999" ph="(v, event) → {" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/FloatWindowManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangxiandeng/floatball/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="546">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding />
         </state>
       </provider>

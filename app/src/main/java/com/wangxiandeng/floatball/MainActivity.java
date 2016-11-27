@@ -14,8 +14,6 @@ public class MainActivity extends Activity {
     private Button mBtnStart;
     private Button mBtnQuit;
 
-    public static boolean mIsShowing = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,17 +62,5 @@ public class MainActivity extends Activity {
             startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
             Toast.makeText(this, "请先开启FloatBall辅助功能", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mIsShowing = true;
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mIsShowing = false;
     }
 }

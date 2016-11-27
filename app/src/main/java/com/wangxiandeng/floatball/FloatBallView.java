@@ -3,7 +3,6 @@ package com.wangxiandeng.floatball;
 
 import android.accessibilityservice.AccessibilityService;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Vibrator;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -53,7 +52,7 @@ public class FloatBallView extends LinearLayout {
     private final static int MODE_LEFT = 0x003;
     private final static int MODE_RIGHT = 0x004;
     private final static int MODE_MOVE = 0x005;
-    private final static int MODE_TOAPP = 0x006;
+    private final static int MODE_GONE = 0x006;
 
     private final static int OFFSET = 30;
 
@@ -150,11 +149,9 @@ public class FloatBallView extends LinearLayout {
         });
     }
 
-    private void toAppIndex() {
+    private void toRemove() {
         mVibrator.vibrate(mPattern, -1);
-        Intent intent = new Intent(getContext(), MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        getContext().startActivity(intent);
+        FloatWindowManager.removeBallView(getContext());
     }
 
     private boolean isTouchSlop(MotionEvent event) {
@@ -191,7 +188,7 @@ public class FloatBallView extends LinearLayout {
             }
         } else {
             if (offsetY > 0) {
-                if (mCurrentMode == MODE_DOWN || mCurrentMode == MODE_TOAPP) {
+                if (mCurrentMode == MODE_DOWN || mCurrentMode == MODE_GONE) {
                     return;
                 }
                 mCurrentMode = MODE_DOWN;
@@ -201,11 +198,8 @@ public class FloatBallView extends LinearLayout {
                     @Override
                     public void run() {
                         if (mCurrentMode == MODE_DOWN && mIsTouching) {
-                            if (MainActivity.mIsShowing) {
-                                return;
-                            }
-                            toAppIndex();
-                            mCurrentMode = MODE_TOAPP;
+                            toRemove();
+                            mCurrentMode = MODE_GONE;
                         }
                     }
                 }, TO_APP_INDEX_LIMIT);
