@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="630286ca225c36e6fbf680e86ba8b6c1d534a885">
+        sha1="894488be9e448fc80da95fc8c064a894d7536869">
         <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_30d14e30202204a3dd3f933ca351eea36e7dbd2b/classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="b694ddcce77934719643d47463025cb8a55b6a8d">
+        sha1="f033d9b0df8661bbf806a7e28f69b23b0d555545">
         <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2a3c5535f0c8d55a7cbea4123d434003bc643cab/classes.dex" />
     </item>
     <item
