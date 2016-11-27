@@ -7,7 +7,7 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 
 /**
- * Created by xingzhu on 2016/11/25.
+ * Created by wangxiandeng on 2016/11/25.
  */
 
 public class FloatWindowManager {

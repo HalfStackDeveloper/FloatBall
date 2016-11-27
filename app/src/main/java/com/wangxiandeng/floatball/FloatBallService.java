@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.accessibility.AccessibilityEvent;
 
 /**
- * Created by xingzhu on 2016/11/25.
+ * Created by wangxiandeng on 2016/11/25.
  */
 
 public class FloatBallService extends AccessibilityService {

@@ -3,6 +3,7 @@ package com.wangxiandeng.floatball;
 
 import android.accessibilityservice.AccessibilityService;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Vibrator;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -15,7 +16,7 @@ import android.widget.LinearLayout;
 import java.lang.reflect.Field;
 
 /**
- * Created by xingzhu on 2016/11/25.
+ * Created by wangxiandeng on 2016/11/25.
  */
 
 public class FloatBallView extends LinearLayout {
@@ -37,6 +38,7 @@ public class FloatBallView extends LinearLayout {
 
     private float mTouchSlop;
     private final static long LONG_CLICK_LIMIT = 300;
+    private final static long TO_APP_INDEX_LIMIT = 1500;
     private final static long CLICK_LIMIT = 200;
 
     private int mStatusBarHeight;
@@ -50,6 +52,8 @@ public class FloatBallView extends LinearLayout {
     private final static int MODE_UP = 0x002;
     private final static int MODE_LEFT = 0x003;
     private final static int MODE_RIGHT = 0x004;
+    private final static int MODE_MOVE = 0x005;
+    private final static int MODE_TOAPP = 0x006;
 
     private final static int OFFSET = 30;
 
@@ -81,7 +85,7 @@ public class FloatBallView extends LinearLayout {
 
         mStatusBarHeight = getStatusBarHeight();
         mOffsetToParent = dip2px(25);
-        mOffsetToParentY= mStatusBarHeight + mOffsetToParent;
+        mOffsetToParentY = mStatusBarHeight + mOffsetToParent;
 
         mImgBigBall.post(new Runnable() {
             @Override
@@ -115,14 +119,15 @@ public class FloatBallView extends LinearLayout {
                         if (!mIsLongTouch && isTouchSlop(event)) {
                             return true;
                         }
-                        if (mIsLongTouch) {
+                        if (mIsLongTouch && (mCurrentMode == MODE_NONE || mCurrentMode == MODE_MOVE)) {
                             mLayoutParams.x = (int) (event.getRawX() - mOffsetToParent);
                             mLayoutParams.y = (int) (event.getRawY() - mOffsetToParentY);
                             mWindowManager.updateViewLayout(FloatBallView.this, mLayoutParams);
                             mBigBallX = mImgBigBall.getX();
                             mBigBallY = mImgBigBall.getY();
+                            mCurrentMode = MODE_MOVE;
                         } else {
-                            doMove(event);
+                            doGesture(event);
                         }
                         break;
                     case MotionEvent.ACTION_CANCEL:
@@ -133,7 +138,7 @@ public class FloatBallView extends LinearLayout {
                         } else if (isClick(event)) {
                             AccessibilityUtil.doBack(mService);
                         } else {
-                            doUp(event);
+                            doUp();
                         }
                         mImgBall.setVisibility(VISIBLE);
                         mImgBigBall.setVisibility(INVISIBLE);
@@ -145,6 +150,13 @@ public class FloatBallView extends LinearLayout {
         });
     }
 
+    private void toAppIndex() {
+        mVibrator.vibrate(mPattern, -1);
+        Intent intent = new Intent(getContext(), MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getContext().startActivity(intent);
+    }
+
     private boolean isTouchSlop(MotionEvent event) {
         float x = event.getX();
         float y = event.getY();
@@ -154,7 +166,7 @@ public class FloatBallView extends LinearLayout {
         return false;
     }
 
-    private void doMove(MotionEvent event) {
+    private void doGesture(MotionEvent event) {
         float offsetX = event.getX() - mLastDownX;
         float offsetY = event.getY() - mLastDownY;
 
@@ -179,12 +191,24 @@ public class FloatBallView extends LinearLayout {
             }
         } else {
             if (offsetY > 0) {
-                if (mCurrentMode == MODE_DOWN) {
+                if (mCurrentMode == MODE_DOWN || mCurrentMode == MODE_TOAPP) {
                     return;
                 }
                 mCurrentMode = MODE_DOWN;
                 mImgBigBall.setX(mBigBallX);
                 mImgBigBall.setY(mBigBallY + OFFSET);
+                postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (mCurrentMode == MODE_DOWN && mIsTouching) {
+                            if (MainActivity.mIsShowing) {
+                                return;
+                            }
+                            toAppIndex();
+                            mCurrentMode = MODE_TOAPP;
+                        }
+                    }
+                }, TO_APP_INDEX_LIMIT);
             } else {
                 if (mCurrentMode == MODE_UP) {
                     return;
@@ -196,17 +220,19 @@ public class FloatBallView extends LinearLayout {
         }
     }
 
-    private void doUp(MotionEvent event) {
-        float offsetX = event.getX() - mLastDownX;
-        float offsetY = event.getY() - mLastDownY;
-        if (Math.abs(offsetX) > Math.abs(offsetY)) {
-            AccessibilityUtil.doLeftOrRight(mService);
-        } else {
-            if (offsetY > 0) {
+    private void doUp() {
+        switch (mCurrentMode) {
+            case MODE_LEFT:
+            case MODE_RIGHT:
+                AccessibilityUtil.doLeftOrRight(mService);
+                break;
+            case MODE_DOWN:
                 AccessibilityUtil.doPullDown(mService);
-            } else {
+                break;
+            case MODE_UP:
                 AccessibilityUtil.doPullUp(mService);
-            }
+                break;
+
         }
         mImgBigBall.setX(mBigBallX);
         mImgBigBall.setY(mBigBallY);
@@ -234,7 +260,7 @@ public class FloatBallView extends LinearLayout {
         float offsetY = Math.abs(event.getY() - mLastDownY);
         long time = System.currentTimeMillis() - mLastDownTime;
 
-        if (offsetX < mTouchSlop*2 && offsetY < mTouchSlop*2 && time < CLICK_LIMIT) {
+        if (offsetX < mTouchSlop * 2 && offsetY < mTouchSlop * 2 && time < CLICK_LIMIT) {
             return true;
         } else {
             return false;

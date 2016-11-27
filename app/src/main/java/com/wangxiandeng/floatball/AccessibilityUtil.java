@@ -5,7 +5,7 @@ import android.content.Context;
 import android.provider.Settings;
 
 /**
- * Created by xingzhu on 2016/11/25.
+ * Created by wangxiandeng on 2016/11/25.
  */
 
 public class AccessibilityUtil {
