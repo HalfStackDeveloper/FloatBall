@@ -37,7 +37,7 @@ public class FloatBallView extends LinearLayout {
 
     private float mTouchSlop;
     private final static long LONG_CLICK_LIMIT = 300;
-    private final static long TO_APP_INDEX_LIMIT = 1500;
+    private final static long REMOVE_LIMIT = 1500;
     private final static long CLICK_LIMIT = 200;
 
     private int mStatusBarHeight;
@@ -215,7 +215,7 @@ public class FloatBallView extends LinearLayout {
                             mCurrentMode = MODE_GONE;
                         }
                     }
-                }, TO_APP_INDEX_LIMIT);
+                }, REMOVE_LIMIT);
             } else {
                 if (mCurrentMode == MODE_UP) {
                     return;
