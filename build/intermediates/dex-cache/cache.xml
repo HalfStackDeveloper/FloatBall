@@ -2,157 +2,139 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_8b57bc8a478b96626539ebb437a0152538f3b6d9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_13a68c8166cf7b89cd6a8b3f24cd7a0131ffe247/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_309a76bc1b0231f6f16b863894cc70da0d52bed9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_99acae2848e072deef31edd2e1b5a3f55ff00756/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_6514dbe34e4a35442c57637541fece04ff2c0f08/classes.dex" />
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_26ea4a4d84d02ca6b4aec18ea0c42e4f6aebb60e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="894488be9e448fc80da95fc8c064a894d7536869">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_30d14e30202204a3dd3f933ca351eea36e7dbd2b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f033d9b0df8661bbf806a7e28f69b23b0d555545">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2a3c5535f0c8d55a7cbea4123d434003bc643cab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_dbba626657b885634c5e6e84531c2f9450987a13/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_249dda5d84e7abe453e44ff1ab24caf9b0a3e5ae/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_7cf79ba8bcb8a00cf96a5f69eecb1f0922ccaa58/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_20e620a02bbe76d85cf57a96dce55c86b76f1732/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_067cb87d2ca62ea6303caf3c94b04a861ab50441/classes.dex" />
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_afb2c781960502fa36a42b9e9978193f837f64a3.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_97bcd3b85e5d58ba561ed0deec9a14210d924328/classes.dex" />
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_6ca6e901b99b1022acd16030a4090b7c0345daa0.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_3779e78d07733bc3619c9a1e8c21f22b5eb5a7f8/classes.dex" />
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_7cf79ba8bcb8a00cf96a5f69eecb1f0922ccaa58.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_ef11a5bf8dd1d67ee0b8712c0aa86ad5ee9b0348/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_3ae22f8dc4b9c17de0b1a3940b771886f36c8157/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.2"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/FloatBall/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_79401bec47a36c53b1c5181a37edd4f50b061cf2/classes.dex" />
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_bcd05d08bf3a1b2f8875b09a901ad1c5ac91e968.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_da5690a2970ce2d90cc0adf4cdce5511ba05b85e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_d9fa0561a81eb52433bdc47503f5679c6eade39b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_6fc9da54ad7ce702c4eda3fad0a8404eb8361cc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_89ba4e6b4167a78a832517d0d4214a02d461779b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_a765aa0c58f667fcd83f066a844b0a0c384eb20f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_acdf5a9c75152f822d0d72557f230e3ba2c0c96e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_ed6e63dc89265b86ed7ebfbdf7a7d7559f63aa9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_5161a8a6b343fc78d6af45dc333598dbba395fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_8436200e72ce626a062dc4721203247e5dbfa167.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/wanginbeijing/Documents/MyProgramings/Android/MyProject/FloatBall/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_62a3010fa77923106f5588b1049593e99775d24b.jar" />
     </item>
 
 </items>

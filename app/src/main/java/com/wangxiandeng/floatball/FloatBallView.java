@@ -108,8 +108,9 @@ public class FloatBallView extends LinearLayout {
                         postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                if (!mIsLongTouch && mIsTouching && mCurrentMode == MODE_NONE) {
-                                    mIsLongTouch = isLongClick(event);
+                                if (mIsTouching && mCurrentMode == MODE_NONE) {
+                                    mIsLongTouch = true;
+                                    mVibrator.vibrate(mPattern, -1);
                                 }
                             }
                         }, LONG_CLICK_LIMIT);
@@ -159,6 +160,7 @@ public class FloatBallView extends LinearLayout {
 
     /**
      * 判断是否是轻微滑动
+     *
      * @param event
      * @return
      */
@@ -173,6 +175,7 @@ public class FloatBallView extends LinearLayout {
 
     /**
      * 判断手势（左右滑动、上拉下拉)）
+     *
      * @param event
      */
     private void doGesture(MotionEvent event) {
@@ -252,27 +255,10 @@ public class FloatBallView extends LinearLayout {
         mLayoutParams = params;
     }
 
-    /**
-     * 判断是否是长按
-     * @param event
-     * @return
-     */
-    private boolean isLongClick(MotionEvent event) {
-        float offsetX = Math.abs(event.getX() - mLastDownX);
-        float offsetY = Math.abs(event.getY() - mLastDownY);
-        long time = System.currentTimeMillis() - mLastDownTime;
-
-        if (offsetX < mTouchSlop && offsetY < mTouchSlop && time >= LONG_CLICK_LIMIT) {
-            //震动提醒
-            mVibrator.vibrate(mPattern, -1);
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     /**
      * 判断是否是单击
+     *
      * @param event
      * @return
      */
@@ -290,6 +276,7 @@ public class FloatBallView extends LinearLayout {
 
     /**
      * 获取通知栏高度
+     *
      * @return
      */
     private int getStatusBarHeight() {
