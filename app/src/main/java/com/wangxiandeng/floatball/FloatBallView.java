@@ -108,7 +108,7 @@ public class FloatBallView extends LinearLayout {
                         postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                if (mIsTouching && mCurrentMode == MODE_NONE) {
+                                if (isLongTouch()) {
                                     mIsLongTouch = true;
                                     mVibrator.vibrate(mPattern, -1);
                                 }
@@ -148,6 +148,14 @@ public class FloatBallView extends LinearLayout {
                 return true;
             }
         });
+    }
+
+    private boolean isLongTouch() {
+        long time = System.currentTimeMillis();
+        if (mIsTouching && mCurrentMode == MODE_NONE && (time - mLastDownTime >= LONG_CLICK_LIMIT)) {
+            return true;
+        }
+        return false;
     }
 
     /**
